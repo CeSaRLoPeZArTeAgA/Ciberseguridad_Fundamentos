@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CC0F7-A Quiz Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="check">✓</span>
+      <div>
+        <h1>CC0F7-A Quiz Maker</h1>
+        <p>Banco de preguntas aleatorio estilo ClassMarker</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button id="btnResetTop" class="btn btn-ghost">Reiniciar aleatorio</button>
+      <button id="btnFinishTop" class="btn btn-primary">Finalizar</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section id="setup" class="panel setup-panel">
+      <h2>Configurar práctica</h2>
+      <p class="muted">Cada inicio mezcla el orden de preguntas y alternativas A-E.</p>
+      <div class="setup-grid">
+        <label>
+          Número de preguntas
+          <select id="questionCount">
+            <option value="all">Todas</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+          </select>
+        </label>
+        <label>
+          Fuente
+          <select id="sourceFilter">
+            <option value="all">Todas</option>
+            <option value="PC1">PC1</option>
+            <option value="PC3">PC3</option>
+            <option value="PC4">PC4</option>
+            <option value="Parcial">Parcial</option>
+            <option value="Final EF">Final EF</option>
+          </select>
+        </label>
+      </div>
+      <button id="btnStart" class="btn btn-primary btn-wide">Iniciar examen</button>
+    </section>
+
+    <aside id="sidebar" class="panel sidebar hidden">
+      <div class="statbox">
+        <span>Tiempo</span>
+        <strong id="timer">00:00</strong>
+      </div>
+      <div class="statbox">
+        <span>Avance</span>
+        <strong id="progressText">0/0</strong>
+      </div>
+      <div class="legend">
+        <span><i class="dot current"></i> Actual</span>
+        <span><i class="dot answered"></i> Respondida</span>
+      </div>
+      <div id="questionNav" class="question-nav"></div>
+    </aside>
+
+    <section id="quiz" class="panel quiz-panel hidden">
+      <div class="question-header">
+        <div>
+          <span id="sourceBadge" class="badge">Fuente</span>
+          <span id="topicBadge" class="badge badge-soft">Tema</span>
+        </div>
+        <strong id="questionNumber">Question 1 of 1</strong>
+      </div>
+      <h2 id="questionPrompt"></h2>
+      <p id="questionType" class="muted"></p>
+      <form id="optionsForm" class="options"></form>
+      <div class="footer-actions">
+        <button id="btnPrev" class="btn btn-ghost" type="button">Anterior</button>
+        <button id="btnNext" class="btn btn-primary" type="button">Siguiente</button>
+      </div>
+    </section>
+
+    <section id="results" class="panel results-panel hidden">
+      <h2>Resultado final</h2>
+      <div class="score-card">
+        <div>
+          <span>Puntuación</span>
+          <strong id="scorePercent">0%</strong>
+        </div>
+        <div>
+          <span>Correctas</span>
+          <strong id="scoreCorrect">0/0</strong>
+        </div>
+        <div>
+          <span>Tiempo</span>
+          <strong id="finalTime">00:00</strong>
+        </div>
+      </div>
+      <div class="footer-actions wrap">
+        <button id="btnReview" class="btn btn-ghost">Ver revisión</button>
+        <button id="btnRestart" class="btn btn-primary">Reiniciar aleatorio</button>
+      </div>
+      <div id="review" class="review hidden"></div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
