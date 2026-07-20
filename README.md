@@ -1,17 +1,20 @@
-# Topicos IV
-EL diseño del repositorio es:
+# Tópicos IV — Fundamentos de Ciberseguridad
 
-#[1] CAESAR CIPHER
-#[2] AFFINE CIPHER
-#[3] SUBSTITUTION CIPHER
-#[4] AES-CBC
-[5] AES-GCM
-[6] HASH ALGORITHMS
-[7] SOFTWARE SECURITY MODULES
-[8] RSA ALGORITHM
-[9] DIGITAL ENVELOPE PROTOCOL
-[10] DIGITAL CERTIFICATION
-[11] DIGITAL SIGNATURE
-[12] TLS
-[13] PQC
-[14] CRYPTOKI
+Este repositorio contiene implementaciones, ejemplos y documentación relacionados con criptografía, seguridad de software y protocolos de comunicación segura.
+
+## Estructura del repositorio
+
+1. **Caesar Cipher**
+2. **Affine Cipher**
+3. **Substitution Cipher**
+4. **AES-CBC**
+5. **AES-GCM**
+6. **Hash Algorithms**
+7. **Software Security Modules**
+8. **RSA Algorithm**
+9. **Digital Envelope Protocol**
+10. **Digital Certification**
+11. **Digital Signature**
+12. **TLS Protocol**
+13. **Post-Quantum Cryptography — PQC**
+14. **Cryptoki — PKCS#11**
