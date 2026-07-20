@@ -1,6 +1,6 @@
 # Topicos IV
-EL diseño del repositorio es:
-[1] CAESAR CIPHER
+*EL diseño del repositorio es:
+*[1] CAESAR CIPHER
 [2] AFFINE CIPHER
 [3] SUBSTITUTION CIPHER
 [4] AES-CBC
